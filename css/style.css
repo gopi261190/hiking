@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+.container {
+    height: 100%;
+    height: 100vh;
+    background-image: url("../image/bg.jpg");
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+/*header*/
+
+.navigation {
+    max-width: 1300px;
+    padding: 50px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.log {
+    width: 15%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    padding-left: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 1rem;
+}
+
+.icon {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.fa {
+    font-size: 35px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.social {
+    text-align: right;
+    padding-top: 5px;
+}
+
+.social-icon {
+    padding: 6px 7px;
+    margin: 2px 2px;
+    font-size: 1.3rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.face {
+    padding: 6px 10px;
+}
+
+/*center*/
+
+.center {
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.text {
+    width: 50%;
+    padding: 5% 0% 0% 0%;
+}
+
+.text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.bg {
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.text h1 {
+    font-size: 9.2rem;
+}
+
+.text p {
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding-right: 10%;
+}
+
+.btn {
+    width: 200px;
+    height: 55px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.image {
+    width: 50%;
+    text-align: center;
+}
+
+.girl {
+    width: 85%;
+}
+
+/*footer*/
+
+footer {
+    max-width: 1300px;
+    padding: 30px 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    width: 50%;
+}
+
+.copyright p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+.contact {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.number {
+    text-align: right;
+}
+
+.bg1 {
+    margin: 0px 5px;
+    font-size: 1.5rem;
+}
+
+.bg2 {
+    display: block;
+    margin: 2px 5px;
+    font-size: 2rem;
+}
+
+.hills {
+    width: 100px;
+}
+
+@media only screen and (max-width:1070px) {
+    .social {
+        width: 50%;
+        display: flex;
+        position: absolute;
+        bottom: 70px;
+    }
+    .copyright p {
+        padding-top: 0;
+    }
+    li {
+        padding-left: 43px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        height: auto;
+    }
+    .icon {
+        display: block;
+        outline: none;
+    }
+    .log {
+        width: 120px;
+    }
+    li {
+        padding: 10px 30px 0px 0px;
+        font-size: .9rem;
+    }
+    ul {
+        position: absolute;
+        top: 100px;
+        margin: 0;
+        padding-left: 0;
+       display: none;
+       
+       
+    }
+    .center {
+        text-align: center;
+    }
+    .text {
+        width: 100%;
+        padding: 60px 0px;
+    }
+    .text p {
+        padding-right: 0;
+    }
+    .text h1 {
+        font-size: 5rem;
+    }
+    .text h2{
+        margin: 30px 0px;
+    }
+    .image {
+        width: 100%;
+    }
+    .girl {
+        width: 80%;
+    }
+    footer {
+        display: block;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+    .social {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        bottom: 50px;
+    }
+    .social-icon {
+        margin: 0px 20px;
+    }
+    .contact {
+        width: 100%;
+        justify-content: center;
+        padding: 25px;
+    }
+    .bg2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
